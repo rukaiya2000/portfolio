@@ -546,7 +546,9 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
-
+  @media (max-width: 1000px) {
+    .textup {
+      margin-top: -150px; } }
 .container {
   width: 100%;
   padding-right: 15px;
@@ -4383,7 +4385,14 @@ input[type="button"].btn-block {
       -webkit-transition: none;
       -o-transition: none;
       transition: none; } }
-
+.arrowleft{
+  margin-top: 340px;
+  
+  color: white;
+}
+svg .arrowleft{
+  fill: white;
+}
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -4420,6 +4429,11 @@ background-color: white!important; }
     text-decoration: none;
     outline: 0;
     opacity: 0.9; }
+    .carousel-control{
+      background-color: white;
+      opacity: 0;
+width: 9%;
+    }
 
 .carousel-control-prev {
   left: 0; }
@@ -5863,7 +5877,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important; }
+  margin-top: 5rem !important; }
 
 .mr-5,
 .mx-5 {
