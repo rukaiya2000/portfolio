@@ -495,7 +495,8 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; 
+  height: auto;
+  border-radius: 50%;
   transform: rotate(0deg);
   transition: 1500ms;}
 
@@ -2154,7 +2155,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 0.01rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2639,7 +2640,7 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .dropdown-toggle::after {
     display: inline-block;
-    margin-left: 0.255em;
+    margin-left: 1.2em;
     vertical-align: 0.255em;
     content: "";
     border-top: 0.3em solid;
@@ -2785,18 +2786,39 @@ input[type="button"].btn-block {
   right: auto;
   bottom: auto; }
 
-.dropdown-divider {
-  height: 0;
-  margin: 0.5rem 0;
-  overflow: hidden;
-  border-top: 1px solid #e9ecef; }
 
+.dropdown-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #5197C6;
+    visibility: visible;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+    .dropdown-item:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+      transform: scaleX(1); }
 .dropdown-item {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 500;
   color: #212529;
   text-align: inherit;
@@ -2819,18 +2841,6 @@ input[type="button"].btn-block {
 .dropdown-menu.show {
   display: block; }
 
-.dropdown-header {
-  display: block;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0;
-  font-size: 0.875rem;
-  color: #6c757d;
-  white-space: nowrap; }
-
-.dropdown-item-text {
-  display: block;
-  padding: 0.25rem 1.5rem;
-  color: #212529; }
 
 .btn-group,
 .btn-group-vertical {
@@ -5705,9 +5715,9 @@ button.bg-dark:focus {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow {
+/* .shadow {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; } */
 
 .shadow-lg {
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
@@ -7392,7 +7402,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   color: black;
-  font-weight: 250; }
+  font-weight: 400; }
 
 .text-primary {
   color: #5197C6 !important; }
@@ -7515,11 +7525,6 @@ h1, h2, h3, h4, h5,
     background: transparent;
     background: none;
     color: #5197C6; }
-    .ftco-navbar-light .navbar-nav > .nav-item .nav-link.active span:before {
-      visibility: visible;
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
       color: #5197C6; } }
@@ -7797,7 +7802,7 @@ h1, h2, h3, h4, h5,
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
-  border-radius: 40px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
@@ -7873,7 +7878,7 @@ h1, h2, h3, h4, h5,
   width: 100%; }
   .ftco-about ul.about-info li {
     list-style: none;
-    margin-bottom: 20px; }
+    margin-bottom: 6px; }
     .ftco-about ul.about-info li span {
       width: calc(100% - 130px); }
       .ftco-about ul.about-info li span:first-child {
@@ -7905,7 +7910,7 @@ h1, h2, h3, h4, h5,
     #navi li a {
       color: #000000; }
       #navi li a.current {
-        color: #5197C6;
+        color: #ab410d;
         margin-left: 20px;
         position: relative; }
         #navi li a.current:after {
@@ -7918,7 +7923,7 @@ h1, h2, h3, h4, h5,
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-          background: #5197C6; }
+          background: #ab410d; }
 
 .page {
   width: 100%;
@@ -8611,7 +8616,7 @@ textarea.form-control {
   .contact-section .box .icon {
     width: 100px;
     height: 100px;
-    background: #5197C6;
+    background: white;
     margin: 0 auto;
     margin-bottom: 10px;
     -webkit-border-radius: 50%;
@@ -8809,7 +8814,50 @@ textarea.form-control {
     .categories li.active a, .sidelink li.active a {
       color: #000000;
       font-style: italic; }
+ .energy{
+margin-top:-20px;
+margin-left: -70px;
+      }
+ /* arrow */
+ #button {
+  display: inline-block;
+  background-color: #ab410d;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;}
+.row{
+margin: 0px;
+}
 
+#button::after {
+content: "\f077";
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+font-size: 2em;
+line-height: 50px;
+color: #fff;
+}
+
+/* arrow end */
+.area{
+  margin-top: -40px;
+  margin-left: 100px;
+}
 #ftco-loader {
   position: fixed;
   width: 96px;
