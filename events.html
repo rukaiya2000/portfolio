@@ -71,53 +71,114 @@
 
       <div class="row no-gutters">
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event2.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(1)" style="background-image: url(images/event2.png);">
             
           </div>
         </div>
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event4.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(2)" style="background-image: url(images/event4.png);">
             
           </div>
         </div>
       
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event3.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(3)" style="background-image: url(images/event5.jpg);">
             
           </div>
       </div>
       <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event7.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(4)" style="background-image: url(images/event7.png);">
             
           </div>
         </div>
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event5.jpg);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(5)" style="background-image: url(images/event1.jpeg);">
             
           </div>
         </div>
       
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event6.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(6)" style="background-image: url(images/event6.png);">
             
           </div>
         </div>
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event8.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(7)" style="background-image: url(images/event8.png);">
             
           </div>
         </div>
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event1.jpeg);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(8)" style="background-image: url(images/event3.png);">
             
           </div>
         </div>
         <div class="col-md-4">
-          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/event9.png);">
+          <div class="project event img ftco-animate d-flex justify-content-center align-items-center" onclick="openModal();currentSlide(9)" style="background-image: url(images/event9.png);">
             
           </div>
         </div>
       </div>
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/event2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/event4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/event5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/event7.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/event1.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/event6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/event8.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/event3.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/event9.png" style="width:100%">
+    </div>
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    
+    
+
+    <!-- Thumbnail image controls -->
+  
+  </div>
+</div>
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
