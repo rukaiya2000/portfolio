@@ -4379,54 +4379,18 @@ input[type="button"].btn-block {
       transition: none; } }
 .arrowleft{
   margin-top: 340px;
-  
+  z-index: 100;
   color: white;
 }
 @media (max-width: 1000px) {
   .arrowleft {
 margin-top: 200px;    } }
-svg .arrowleft{
-  fill: white;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 15%;
-  color: #fff;
-  text-align: center;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.15s ease;
-  -o-transition: opacity 0.15s ease;
-  transition: opacity 0.15s ease;
-background-color: white!important; }
-  @media (prefers-reduced-motion: reduce) {
-    .carousel-control-prev,
-    .carousel-control-next {
-      -webkit-transition: none;
-      -o-transition: none;
-      transition: none; } }
-  .carousel-control-prev:hover, .carousel-control-prev:focus,
-  .carousel-control-next:hover,
-  .carousel-control-next:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    opacity: 0.9; }
+
+
+  
     .carousel-control{
       background-color: white;
-      opacity: 0;
+      height: 0px;
 width: 9%;
     }
     .carousel-control:focus, .carousel-control:hover {
@@ -7615,6 +7579,7 @@ h1, h2, h3, h4, h5,
 
 .slider-text .subheading {
   text-transform: uppercase;
+ 
   font-size: 16px;
   font-weight: 800;
   color: #5197C6;
@@ -8397,16 +8362,7 @@ textarea.form-control {
     text-transform: uppercase;
     color: black;
     letter-spacing: 3px; }
-  .heading-section h1.big {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    font-size: 7vw;
-    color: rgba(255, 255, 255, 0.1);
-    z-index: -1;
-    font-weight: 900; }
-    .heading-section h1.big.big-2 {
-      right: 0; }
+  
   .heading-section h2 {
     font-size: 50px;
     font-weight: 700; }
@@ -8792,22 +8748,33 @@ textarea.form-control {
     .categories li.active a, .sidelink li.active a {
       color: #000000;
       font-style: italic; }
- .energy{
-margin-top:-20px;
-margin-left: -70px;
+      .energy{
+        margin-top:29px;
+        margin-left: 40px;
+        font-weight: 550;
 
       }
-
-     /*  @media (max-width: 600px) {
-        .oil {
-          margin-left:100px; } }
-
-          @media (max-width: 1000px) {
-            .infra {
-              margin-top:  } }
-              @media (max-width: 1000px) {
-                .green {
-                  margin-top:  } } */
+      .green{
+        margin-top: 19px;
+        font-weight: 550;
+        margin-left:20px ;
+      }
+      .oil{
+        margin-top: 25px;
+        font-weight: 550;
+        margin-left: 20px;
+      }
+      .infra{
+        margin-top: 25px;
+        font-weight: 550;
+        margin-left: 10px;
+      }
+      @media (max-width: 575px) {
+        .img-fluid {
+          margin-left:-40px; } }
+          @media (max-width: 575px) {
+            .area {
+              text-align:left; } }
     .logo{
       padding: 0em!important;
       
@@ -8927,7 +8894,9 @@ color: #fff;
  
   
 }
-
+.head{
+  margin-top: -200px;
+}
 /* Next & previous buttons */
 .prev,
 .next {
