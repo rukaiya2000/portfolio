@@ -1,7 +1,16 @@
 import profileImage from '../assets/myimage.jpeg';
-import { SOCIAL_LINKS, PERSONAL_INFO } from '../config/constants';
+import { SOCIAL_LINKS, PERSONAL_INFO, RESUME_PATH, RESUME_FILENAME } from '../config/constants';
 
 export function Hero() {
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = RESUME_PATH;
+    link.download = RESUME_FILENAME;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="section bg-white">
       <div className="container-max">
@@ -33,9 +42,12 @@ export function Hero() {
               Specialized in RAG systems, agentic architectures, and cloud-native serverless applications.
             </p>
             <div className="flex gap-4 justify-center md:justify-start flex-wrap">
-              <a href="#resume" className="btn-primary">
+              <button
+                onClick={handleDownloadResume}
+                className="btn-primary"
+              >
                 ⬇ Download Resume
-              </a>
+              </button>
               <a href={`mailto:${SOCIAL_LINKS.email}`} className="btn-secondary">
                 ✉ Get in Touch
               </a>

@@ -1,3 +1,5 @@
+import resumePDF from '../assets/rukaiya-khan-resume.pdf';
+
 // Social Links & Contact Information
 export const SOCIAL_LINKS = {
   github: "https://github.com/rukaiya2000",
@@ -6,8 +8,8 @@ export const SOCIAL_LINKS = {
 };
 
 // Resume
-export const RESUME_PATH = "/resume.pdf";
-export const RESUME_FILENAME = "Rukaiya_Resume.pdf";
+export const RESUME_PATH = resumePDF;
+export const RESUME_FILENAME = "Rukaiya_Khan_Resume.pdf";
 
 // Personal Information
 export const PERSONAL_INFO = {
