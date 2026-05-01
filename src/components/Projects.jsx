@@ -1,6 +1,21 @@
 export function Projects() {
   const projects = [
     {
+      title: "NewsNER — Named Entity Recognition Pipeline",
+      description: "Production-grade NLP system that automatically extracts structured entities (organizations, people, locations, monetary values, dates) from text sources with confidence scoring, human expert review, and inter-annotator agreement metrics.",
+      metrics: "85+ entities/sec, 100% test pass rate",
+      technologies: ["Python 3.9+", "Flask", "spaCy 3.7+", "REST APIs", "pytest", "HTML5/CSS3", "JavaScript"],
+      highlights: [
+        "Full-stack Flask app with responsive web dashboard for entity extraction",
+        "Real-time extraction with confidence scoring (0-100%) and progress visualization",
+        "Cohen's Kappa inter-annotator agreement metrics for quality validation",
+        "REST API with 4 endpoints and structured JSON responses",
+        "13 unit tests (100% pass rate), ruff linting, mypy type checking",
+        "Domain-agnostic architecture for financial, biomedical, or custom NER tasks"
+      ],
+      github: "https://github.com/rukaiya2000/newsner",
+    },
+    {
       title: "Opinion Intelligence System",
       description: "Chrome extension paired with FastAPI backend that analyzes Reddit discussions in real-time. Extracts consensus, debates, viewpoints with sentiment, and surfaces structured insights directly on Reddit.",
       metrics: "Real-time analysis",
@@ -24,6 +39,8 @@ export function Projects() {
         "Context-aware AI chat with GPT-3.5 LiteLLM proxy",
         "Dark/light theme system with CSS variables"
       ],
+      github: "https://github.com/rukaiya2000/finance-dashboard",
+      hosted: "https://finance-dashboard-xi-murex-88.vercel.app/",
     },
     {
       title: "Source-Grounded Enterprise RAG System",

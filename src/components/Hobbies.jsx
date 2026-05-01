@@ -1,20 +1,24 @@
+import runningImage from '../assets/run.jpg';
+import badmintonImage from '../assets/badminton.png';
+import Charcuterie from '../assets/board.png';
+
 export function Hobbies() {
   const hobbies = [
     {
       title: "Running",
       description: "Love hitting the trails and staying active",
-      image: "https://images.unsplash.com/photo-1552674605-5defe6aa44bb?w=400&h=300&fit=crop",
+      image: runningImage,
     },
     {
-      title: "Cooking",
-      description: "Experimenting with new recipes and cuisines",
-      image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop",
+      title: "Making Charcuterie Boards",
+      description: "Enjoy crafting delicious and visually appealing charcuterie boards for friends",
+      image: Charcuterie,
     },
     {
-      title: "Photography",
-      description: "Capturing moments and exploring creative perspectives",
-      image: "https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=400&h=300&fit=crop",
-    },
+      title: "Playing Badminton",
+      description: "Enjoying the game and improving my skills",
+      image: badmintonImage,
+    }
   ];
 
   return (
