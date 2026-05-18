@@ -2,7 +2,7 @@
 
 Personal portfolio website for Rukaiya Khan, Software Developer specializing in LLM & AI Engineering and Full Stack development.
 
-**Live at:** [rukaiya2000.github.io/portfolio](https://rukaiya2000.github.io/portfolio) *(update with actual URL)*
+**Live at:** [rukaiya2000.github.io/portfolio](https://rukaiya2000.github.io/portfolio)
 
 ---
 
