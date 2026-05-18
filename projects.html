@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Rukaiya Khan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav id="navbar">
+    <a href="index.html" class="site-name">Rukaiya Khan</a>
+    <ul id="nav-links">
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Toggle menu"
+      onclick="document.getElementById('nav-links').classList.toggle('open')">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-list">
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">NewsNER — Named Entity Recognition Pipeline</span>
+          <span class="project-metrics">85+ entities/sec &nbsp;·&nbsp; 100% test pass rate</span>
+        </div>
+        <p class="project-desc">Production-grade NLP system that automatically extracts structured entities (organizations,
+          people, locations, monetary values, dates) from text sources with confidence scoring, human expert review,
+          and inter-annotator agreement metrics.</p>
+        <ul class="project-highlights">
+          <li>Full-stack Flask app with responsive web dashboard for entity extraction</li>
+          <li>Real-time extraction with confidence scoring (0–100%) and progress visualization</li>
+          <li>Cohen's Kappa inter-annotator agreement metrics for quality validation</li>
+          <li>REST API with 4 endpoints and structured JSON responses</li>
+          <li>13 unit tests (100% pass rate), ruff linting, mypy type checking</li>
+          <li>Domain-agnostic architecture for financial, biomedical, or custom NER tasks</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Python 3.9+</span>
+          <span class="tech-tag">Flask</span>
+          <span class="tech-tag">spaCy 3.7+</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">pytest</span>
+          <span class="tech-tag">HTML5/CSS3</span>
+          <span class="tech-tag">JavaScript</span>
+        </div>
+        <div class="relevant-skills">
+          <span class="relevant-skills-label">Skills</span>
+          <span class="tech-tag skill-tag">Python</span>
+          <span class="tech-tag skill-tag">JavaScript (ES6+)</span>
+          <span class="tech-tag skill-tag">REST APIs / GraphQL</span>
+          <span class="tech-tag skill-tag">HTML &amp; CSS</span>
+          <span class="tech-tag skill-tag">Git / GitHub Actions</span>
+          <span class="tech-tag skill-tag">CI/CD</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rukaiya2000/newsner" target="_blank" rel="noopener noreferrer">→ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Opinion Intelligence System</span>
+          <span class="project-metrics">Real-time analysis</span>
+        </div>
+        <p class="project-desc">Chrome extension paired with FastAPI backend that analyzes Reddit discussions in real-time.
+          Extracts consensus, debates, viewpoints with sentiment, and surfaces structured insights directly on Reddit.</p>
+        <ul class="project-highlights">
+          <li>AI pipeline extracts consensus from Reddit discussions</li>
+          <li>Inline "Analyze" button on Reddit posts</li>
+          <li>Sentiment analysis of different viewpoints</li>
+          <li>Persistent results in extension popup for later review</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Chrome Extension</span>
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">LLMs</span>
+          <span class="tech-tag">Sentiment Analysis</span>
+          <span class="tech-tag">Reddit API</span>
+        </div>
+        <div class="relevant-skills">
+          <span class="relevant-skills-label">Skills</span>
+          <span class="tech-tag skill-tag">Python</span>
+          <span class="tech-tag skill-tag">JavaScript (ES6+)</span>
+          <span class="tech-tag skill-tag">REST APIs / GraphQL</span>
+          <span class="tech-tag skill-tag">LLM &amp; AI Engineering</span>
+          <span class="tech-tag skill-tag">Prompt Engineering</span>
+          <span class="tech-tag skill-tag">Agentic Systems</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rukaiya2000/opinion-intelligence-system" target="_blank" rel="noopener noreferrer">→ GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">FinanceAI Dashboard</span>
+          <span class="project-metrics">&lt;350ms page transitions</span>
+        </div>
+        <p class="project-desc">Responsive finance dashboard with animated visualizations, AI-powered chat panel,
+          and real-time transaction insights.</p>
+        <ul class="project-highlights">
+          <li>Animated stat cards with count-up numbers</li>
+          <li>Interactive Recharts visualizations (area, donut, bar)</li>
+          <li>Context-aware AI chat with GPT-3.5 LiteLLM proxy</li>
+          <li>Dark/light theme system with CSS variables</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Recharts</span>
+          <span class="tech-tag">Framer Motion</span>
+          <span class="tech-tag">OpenAI API</span>
+          <span class="tech-tag">React Router</span>
+        </div>
+        <div class="relevant-skills">
+          <span class="relevant-skills-label">Skills</span>
+          <span class="tech-tag skill-tag">JavaScript (ES6+)</span>
+          <span class="tech-tag skill-tag">TypeScript</span>
+          <span class="tech-tag skill-tag">React.js / Hooks / Redux</span>
+          <span class="tech-tag skill-tag">HTML &amp; CSS</span>
+          <span class="tech-tag skill-tag">REST APIs / GraphQL</span>
+          <span class="tech-tag skill-tag">Prompt Engineering</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rukaiya2000/finance-dashboard" target="_blank" rel="noopener noreferrer">→ GitHub</a>
+          <a href="https://finance-dashboard-xi-murex-88.vercel.app/" target="_blank" rel="noopener noreferrer">→ Live Site</a>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Source-Grounded Enterprise RAG System</span>
+          <span class="project-metrics">85% Precision@5 &nbsp;·&nbsp; &gt;90% faithfulness &nbsp;·&nbsp; &lt;3s latency</span>
+        </div>
+        <p class="project-desc">Enterprise document intelligence system for policy and compliance analysis with source citations.</p>
+        <ul class="project-highlights">
+          <li>Source-grounded responses with cited evidence</li>
+          <li>Policy and compliance document analysis</li>
+          <li>0.78 F1 score in conflict detection</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">LangChain</span>
+          <span class="tech-tag">MCP Pipelines</span>
+          <span class="tech-tag">Vector Databases</span>
+          <span class="tech-tag">LLMs</span>
+        </div>
+        <div class="relevant-skills">
+          <span class="relevant-skills-label">Skills</span>
+          <span class="tech-tag skill-tag">Python</span>
+          <span class="tech-tag skill-tag">RAG Systems</span>
+          <span class="tech-tag skill-tag">LangChain / LangGraph</span>
+          <span class="tech-tag skill-tag">MCP Pipelines</span>
+          <span class="tech-tag skill-tag">Prompt Engineering</span>
+          <span class="tech-tag skill-tag">Agentic Systems</span>
+          <span class="tech-tag skill-tag">Vector Search</span>
+          <span class="tech-tag skill-tag">Vector DBs (FAISS, Pinecone, Chroma)</span>
+        </div>
+      </div>
+
+      <div class="project-item">
+        <div class="project-header">
+          <span class="project-title">Incident Intelligence &amp; Root Cause Analysis Platform</span>
+          <span class="project-metrics">82% Precision@5 &nbsp;·&nbsp; 35% MTTR reduction &nbsp;·&nbsp; &lt;2.5s latency</span>
+        </div>
+        <p class="project-desc">Real-time incident analysis system using MCP pipelines and RAG to analyze logs and alerts.</p>
+        <ul class="project-highlights">
+          <li>Similar incident retrieval with 82% precision</li>
+          <li>Automated root cause suggestions</li>
+          <li>Source-grounded incident summaries with evidence</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">LangGraph</span>
+          <span class="tech-tag">MCP Pipelines</span>
+          <span class="tech-tag">Embeddings</span>
+          <span class="tech-tag">RAG</span>
+        </div>
+        <div class="relevant-skills">
+          <span class="relevant-skills-label">Skills</span>
+          <span class="tech-tag skill-tag">Python</span>
+          <span class="tech-tag skill-tag">RAG Systems</span>
+          <span class="tech-tag skill-tag">LangChain / LangGraph</span>
+          <span class="tech-tag skill-tag">MCP Pipelines</span>
+          <span class="tech-tag skill-tag">Agentic Systems</span>
+          <span class="tech-tag skill-tag">Vector Search</span>
+          <span class="tech-tag skill-tag">Vector DBs (FAISS, Pinecone, Chroma)</span>
+          <span class="tech-tag skill-tag">AWS Serverless</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="social-links">
+    <a href="https://github.com/rukaiya2000" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
+    <a href="https://www.linkedin.com/in/rukaiyak/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+    <a href="mailto:rukaiyak2000@gmail.com">✉️ Email</a>
+  </div>
+  <p>© 2025 Rukaiya Khan</p>
+</footer>
+
+</body>
+</html>
